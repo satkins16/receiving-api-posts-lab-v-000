@@ -1921,3 +1921,21 @@ Processing by ProductsController#create as */*
   [1m[35m (3.4ms)[0m  commit transaction
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.23ms)
 Completed 201 Created in 50ms (Views: 31.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/products/new" for 96.242.115.144 at 2018-01-15 16:10:42 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 96.242.115.144 at 2018-01-15 16:10:46 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MBlUG4NDPz0pMdiuMWlh+q4Wih4EBKMrNG3bqFaPMHnUEWkXBnRWvbBXsNIb0+0KYmVfSiP5meAVjnxLGFzmHQ==", "product"=>{"name"=>"asdf", "price"=>"asdf", "description"=>"asdf", "inventory"=>"asdf"}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "asdf"], ["description", "asdf"], ["inventory", 0], ["price", 0], ["created_at", "2018-01-15 16:10:46.656279"], ["updated_at", "2018-01-15 16:10:46.656279"]]
+  [1m[36m (39.9ms)[0m  [1mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.28ms)
+Completed 201 Created in 49ms (Views: 2.5ms | ActiveRecord: 40.5ms)
