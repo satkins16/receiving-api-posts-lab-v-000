@@ -1762,3 +1762,29 @@ Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (569.8ms)
 Completed 200 OK in 599ms (Views: 596.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for 96.242.115.144 at 2018-01-15 15:47:58 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 96.242.115.144 at 2018-01-15 15:48:07 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TuRp3Bgw6Yo2MmrhynreZSS7CCuh8F0U+o6tkMHSVDOq7FTQnQeACq9UAp3gwFKV6Mjdf4YNZ9/bbQpzjwGCVw==", "product"=>{"name"=>"", "price"=>"", "description"=>"", "inventory"=>""}, "commit"=>"submit"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO "products" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", ""], ["description", ""], ["created_at", "2018-01-15 15:48:07.923735"], ["updated_at", "2018-01-15 15:48:07.923735"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.241.155.248:56967/products
+Completed 302 Found in 14ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/products" for 96.242.115.144 at 2018-01-15 15:48:07 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.5ms)
