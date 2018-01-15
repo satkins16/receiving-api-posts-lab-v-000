@@ -18,7 +18,8 @@
   $(function () {
     $('form').submit(function(event) {
       event.preventDefault();
-      alert("sup homie?");
+      var values = $(this).serialize();
+      var posting = $.post('/products', values)
     })
   })
 </script>
