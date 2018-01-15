@@ -20,6 +20,7 @@ class ProductsController < ApplicationController
   def create
     Product.create(product_params)
     render json: @product, status: 201
+    binding.pry
   end
 
   def show
