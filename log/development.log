@@ -1884,3 +1884,10 @@ Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (638.2ms)
 Completed 200 OK in 988ms (Views: 947.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for 96.242.115.144 at 2018-01-15 16:08:50 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 119ms (Views: 89.0ms | ActiveRecord: 1.7ms)
