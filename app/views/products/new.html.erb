@@ -20,6 +20,9 @@
       event.preventDefault();
       var values = $(this).serialize();
       var posting = $.post('/products', values)
+      posting.done(function(data) {
+
+      })
     })
   })
 </script>
