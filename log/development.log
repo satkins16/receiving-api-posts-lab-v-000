@@ -1997,3 +1997,10 @@ Processing by ProductsController#create as */*
   [1m[36m (18.9ms)[0m  [1mcommit transaction[0m
 [active_model_serializers] Rendered ActiveModel::Serializer::Null with Class (0.09ms)
 Completed 201 Created in 36ms (Views: 2.4ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/products/new" for 96.242.115.144 at 2018-01-15 16:15:27 +0000
+Cannot render console from 96.242.115.144! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendered products/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 85ms (Views: 83.2ms | ActiveRecord: 0.0ms)
